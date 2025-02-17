@@ -1,0 +1,57 @@
+Relatório de Análise do Vídeo
+------------------------------------
+Total de Frames Analisados: 3326
+
+Distribuição das Emoções:
+- happy: 960 ocorrências
+- sad: 878 ocorrências
+- angry: 126 ocorrências
+- fear: 515 ocorrências
+- neutral: 897 ocorrências
+- surprise: 148 ocorrências
+- disgust: 4 ocorrências
+
+Distribuição das Ações Detectadas:
+- Aperto de mão: 3 ocorrências
+- Movimento anômalo: 1032 ocorrências
+- Digitando no computador: 1017 ocorrências
+- Dando tchau: 675 ocorrências
+- Dançando: 46 ocorrências
+- Andando: 36 ocorrências
+
+
+OBS: As informações abaixo foram adicionadas após a geração do relatório.
+
+### Objetivo do Código ###
+
+O código foi desenvolvido para contar a quantidade de frames em que cada emoção e ação foi detectada, em vez de contar apenas quantas vezes uma nova emoção ou ação apareceu.
+
+Isso significa que:
+
+Se uma pessoa estiver "dançando" por 50 frames, todos esses 50 frames serão contados na distribuição de ações.
+
+Se a emoção "feliz" for detectada em 100 frames, essa será a contagem final.
+
+O objetivo é ter uma visão quantitativa das emoções e ações ao longo do vídeo.
+
+### Limitações e Melhorias Futuras ###
+
+-Limitações
+
+Precisão Limitada: O código usa heurísticas simples para identificar ações, o que pode resultar em erros para movimentos mais sutis.
+
+Variação de Iluminação e Qualidade do Vídeo: Emoções podem ser mal interpretadas dependendo da iluminação e da resolução.
+
+Detecção de Emoções: O modelo de detecção de emoções pode apresentar limitações dependendo da diversidade dos rostos no vídeo.
+
+-Melhorias Futuras
+
+Uso de Machine Learning: Para maior precisão, seria ideal utilizar modelos de aprendizado profundo treinados especificamente para reconhecimento de ações humanas.
+
+Aprimorar Regras: Ajustar os limiares de detecção de movimento para melhorar a precisão na identificação de ações.
+
+Integração com Modelos Avançados: Utilizar redes neurais como LSTMs ou Vision Transformers para melhorar a classificação de ações dinâmicas.
+
+### Conclusão ###
+
+Este código permite analisar vídeos com base em emoções e movimentos. No entanto, as detecções no vídeo não ficaram perfeitas, pois foram baseadas em heurísticas simples e métodos básicos. Com mais tempo e desenvolvimento, seria possível aprimorar bastante os resultados e tornar o sistema mais preciso com técnicas avançadas de IA. No momento, a intenção principal é demonstrar como é possível realizar uma análise de sentimentos e ações em vídeos, servindo como um ponto de partida para projetos mais avançados nessa área.
